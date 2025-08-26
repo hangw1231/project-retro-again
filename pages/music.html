@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style_music.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script_music.js" defer></script>
+    <!-- 사운드클라우드 api -->
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+</head>
+<body>
+    <div class="cont">
+        <header>
+            <ul>
+                <li><a href="">PLACE</a></li>
+                <li><a href="">MEDIA</a></li>
+                <li><a href="">MUSIC</a></li>
+                <li><a href="">FASHION</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="player">
+                <div class="player-screen">
+                    <div class="music-info">
+                        <h3 id="music-title">제목</h3>
+                        <p id="music-artist">아티스트</p>
+                    </div>
+                    <div class="cover">
+                        <img src="" alt="앨범 커버" id="cover">
+                    </div>
+                    <div class="bar" id="bar" aria-label="재생 진행 바">
+                        <span id="fill"></span>
+                    </div>
+                    <div class="music-time">
+                        <span id="time-cur">0:00</span>
+                        <span id="time-dur">0:00</span>
+                    </div>
+                </div>
+                <div class="player-button">
+                    <button class="prev"></button>
+                    <button class="play"></button>
+                    <button class="next"></button>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="list-header">
+                    <li><a href="" data-year="y1970">1970's</a></li>
+                    <li><a href="" data-year="y1980">1980's</a></li>
+                    <li><a href="" data-year="y1990">1990's</a></li>
+                    <li class="on"><a href="" data-year="y2000">2000's</a></li>
+                    <li><a href="" data-year="y2010">2010's</a></li>
+                </ul>
+                <div class="rank-wrap"></div>
+                <a class="goto" href="./music_sub.html" target="_blank">
+                    <p>2000년대 음악 자세히 알아보기</p>
+                    <i></i>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="f_left">
+                <p class="f_logo">Retro.kr</p>
+                <p class="f_tagline">과거와 현재를 잇는 모던 레트로 아카이브</p>
+                <p class="copyright">© 2025 Retro. All Rights Reserved.</p>
+            </div>
+            <div class="f_right">
+                <p class="teamName">Team Retro</p>
+                <div class="members">
+                    <ul class="name">
+                        <li>JIWON</li>
+                        <li>MIN</li>
+                        <li>JUNSOO</li>
+                        <li>SOOMi</li>
+                    </ul>
+                    <ul class="link">
+                        <li>
+                            <a href=""><img src="../img/icon/ico_portfolio.png" alt="jiwon's portfolio"></a>
+                            <a href=""><img src="../img/icon/ico_github.png" alt="jiwon's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/icon/ico_portfolio.png" alt="min's portfolio"></a>
+                            <a href=""><img src="../img/icon/ico_github.png" alt="min's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/icon/ico_portfolio.png" alt="junsoo's portfolio"></a>
+                            <a href=""><img src="../img/icon/ico_github.png" alt="junsoo's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/icon/ico_portfolio.png" alt="soomi's portfolio"></a>
+                            <a href=""><img src="../img/icon/ico_github.png" alt="soomi's github"></a>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- 사운드 클라우드 위젯 -->
+     <div id="scwig" aria-hidden="true">
+        <iframe id="sc-widget" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/onionpeelings/girls-generation-gee-onionjersey-mix&auto_play=false&visual=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&color=6993FE" frameborder="0">
+        </iframe>
+     </div>
+</body>
+</html>
