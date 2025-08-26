@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* DungGeunMo 폰트 */
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* 초기화 */
+html, head, body, h1, h2, h3, h4, h5, h6, div, p, ul, ol, li, dl, dt, dd, address, blockquote, form, fieldset, legend, table, caption, tr, th, thead, tbody, tfoot, header, nav, aside, section, article, footer, figure, figcaption, footer, main {margin: 0; padding: 0;}
+li {list-style-type: none;}
+a {text-decoration: none; color: inherit}
+
+em, i, address, cite {font-style: normal;}
+
+button {border: none; cursor: pointer; background: none;}
+table {border-collapse: collapse;}
+
+body {
+    font-family: 'DungGeunMo', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 공통값(폰트크기/컬러값) */
+:root {
+    --h1: 32px;
+    --h2: 28px;
+    --h3: 24px;
+    --h4: 22px;
+    --p: 16px;
+    --main-color: #6993FE;
+    --point-color: #A0E857;
+    --font-black: #090909;
+    --font-white: #FFFFFF;
+    --border-gray: #BBBBBB;
+    --background: linear-gradient(to bottom, #6A94FF 19%, #CDE1FF 67%, #FFFFFF 92%);
+    --button-color: linear-gradient(to bottom, #F1FFED 18%, #8DDD35 99%);
+}
+
+/* 블라인드 텍스트 */
+.blind {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+}
