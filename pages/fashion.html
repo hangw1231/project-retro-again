@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro.kr - Fashion</title>
+    <link rel="icon" sizes="24x24" href="../img/favicon_star.png" type="image/png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style_fashion.css">
+    <script src="../js/script_fashion.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <ul>
+                <li><a href="./pages/place.html">PLACE</a></li>
+                <li><a href="./pages/media.html">MEDIA</a></li>
+                <li><a href="./pages/music.html">MUSIC</a></li>
+                <li><a href="./fashion.html">FASHION</a></li>
+            </ul>
+        </header>
+        <section id="mainIntro">
+            <!-- <video src=""></video> -->
+            <div class="contents">
+                <p class="bigTitle"><strong>RETRO</strong> is back!</p>
+                <p class="subText">
+                    요즘 다시 뜨는 레트로<br>
+                    <strong>Y2K</strong>부터 <strong>Vintage</strong>까지<br>
+                    당신이 찾는 패션 스타일 가이드를 한눈에!
+                </p>
+                <div class="btnArea">
+                    <a class="btn findStyle" href="#findStyle">내 스타일 찾기</a></button>
+                    <a class="btn newtroLook" href="#newtroLook">요즘 레트로룩 보기</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="newtroLook">
+            <div class="contents">
+                <h2>Today's Retro Fashion</h2>
+                <p class="sub">
+                    패션 아이콘으로 꼽히는 셀럽들의 스타일을 보며, 현대적 감성으로 재해석된 레트로(뉴트로) 패션을 만나보세요!
+                </p>
+                <div class="swipeArea" id="swipeAreaSlider">
+                    <ul>
+                        <li>
+                            <img src="../img/newjeans03.png" alt="Newjeans">
+                            <h3>NewJeans</h3>
+                            <p class="hashtag">#90’s school look #Y2k</p>
+                        </li>
+                        <li>
+                            <img src="../img/jennie03.png" alt="Jennie">
+                            <h3>JENNIE</h3>
+                            <p class="hashtag">#Y2KChic #VintageLuxury</p>
+                        </li>
+                        <li>
+                            <img src="../img/g-dragon02.png" alt="G-Dragon">
+                            <h3>G-Dragon</h3>
+                            <p class="hashtag">#AvantGarde #Street</p>
+                        </li>
+                        <li>
+                            <img src="../img/illit01.png" alt="illit">
+                            <h3>ILLIT</h3>
+                            <p class="hashtag">#Kitsch #TeenCrush</p>
+                        </li>
+                        <li>
+                            <img src="../img/v02.png" alt="V">
+                            <h3>V</h3>
+                            <p class="hashtag">#EuropeanRetro #Vintage</p>
+                        </li>
+                        <li>
+                            <img src="../img/donghwi01.png" alt="Lee Donghwi">
+                            <h3>Lee Donghwi</h3>
+                            <p class="hashtag">#VintageMood #70sVibes</p>
+                        </li>
+                        <li>
+                            <img src="../img/nayoung03.png" alt="Kim Nayoung">
+                            <h3>Kim Nayoung</h3>
+                            <p class="hashtag">#ModernVintage #CoolRetro</p>
+                        </li>
+                        <li>
+                            <img src="../img/taejun02.png" alt="Hong TaeJun">
+                            <h3>Hong TaeJun</h3>
+                            <p class="hashtag">#Classic #VintageModern</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //newtroArea -->
+        <section id="findStyle">
+            <div class="contents">
+                <h2>Find Your Perfect Retro Fashion Item</h2>
+                <p class="sub">나만의 레트로 패션 스타일을 찾고 싶다면 아래 테스트를 진행해보세요!</p>
+                <div class="container">
+                    <div class="paper">
+                        <h3>Retro Fashion Test Start!</h3>
+                        <div class="steps" data-current="1">
+                            <!-- Step 1 -->
+                            <section class="card step is-active" data-step="1" aria-labelledby="q1Legend">
+                                <fieldset class="card_fieldset">
+                                    <legend id="q1Legend" class="card_legend"><strong>Q1.</strong> 평소 나의 성격을 가장 잘 설명하는
+                                        것은?
+                                    </legend>
+                                    <label class="option"><input type="radio" name="q1" value="A" required><span
+                                            class="option_btn">차분하고 신중한 편이에요</span></label>
+                                    <label class="option"><input type="radio" name="q1" value="B"><span
+                                            class="option_btn">활기차고
+                                            외향적인 성격이에요</span></label>
+                                    <label class="option"><input type="radio" name="q1" value="C"><span
+                                            class="option_btn">감성적이고
+                                            섬세한 편이에요</span></label>
+                                    <label class="option"><input type="radio" name="q1" value="D"><span
+                                            class="option_btn">독창적이고
+                                            자기표현이 강한 편이에요</span></label>
+                                </fieldset>
+                                <div class="btnArea">
+                                    <button class="btn btn-next" type="button">다음</button>
+                                </div>
+                            </section>
+                            <!-- Step 2 -->
+                            <section class="card step" data-step="2" aria-labelledby="q2Legend" hidden>
+                                <fieldset class="card_fieldset">
+                                    <legend id="q2Legend" class="card_legend"><strong>Q2.</strong> 당신이 가장 끌리는 컬러 무드는?
+                                    </legend>
+                                    <label class="option"><input type="radio" name="q2" value="A" required><span
+                                            class="option_btn">차분하고 깔끔한 무채색 / 뉴트럴 톤</span></label>
+                                    <label class="option"><input type="radio" name="q2" value="B"><span
+                                            class="option_btn">밝고
+                                            따뜻한 파스텔 톤</span></label>
+                                    <label class="option"><input type="radio" name="q2" value="C"><span
+                                            class="option_btn">클래식하고
+                                            안정감 있는 빈티지 컬러</span></label>
+                                    <label class="option"><input type="radio" name="q2" value="D"><span
+                                            class="option_btn">쨍하고
+                                            강렬한 원색이나 네온 계열</span></label>
+                                </fieldset>
+                                <div class="btnArea">
+                                    <button class="btn btn-prev" type="button">이전</button>
+                                    <button class="btn btn-next" type="button">다음</button>
+                                </div>
+                            </section>
+                            <!-- Step 3 -->
+                            <section class="card step" data-step="3" aria-labelledby="q3Legend" hidden>
+                                <fieldset class="card_fieldset">
+                                    <legend id="q3Legend" class="card_legend"><strong>Q3.</strong> 내가 가장 선호하는 스타일 요소는?
+                                    </legend>
+                                    <label class="option"><input type="radio" name="q3" value="A" required><span
+                                            class="option_btn">단정하고 정제된 실루엣 (ex. 셔츠, 슬랙스)</span></label>
+                                    <label class="option"><input type="radio" name="q3" value="B"><span
+                                            class="option_btn">캐주얼하고
+                                            편한 아이템 (ex. 후디, 조거팬츠)</span></label>
+                                    <label class="option"><input type="radio" name="q3" value="C"><span
+                                            class="option_btn">감성적인
+                                            디테일 (ex. 니트, 워싱 데님, 빈티지한 소재)</span></label>
+                                    <label class="option"><input type="radio" name="q3" value="D"><span
+                                            class="option_btn">유니크하거나 눈에 띄는 아이템 (ex. 컬러감, 패턴, 크롭)</span></label>
+                                </fieldset>
+                                <div class="btnArea">
+                                    <button class="btn btn-prev" type="button">이전</button>
+                                    <button class="btn btn-submit" type="submit">결과 보기</button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <!-- result -->
+                        <section id="resultSection" class="result" hidden aria-live="polite">
+                            <p id="resultText">나에게 잘맞는 레트로 패션은..</p>
+                            <div class="result_card">
+                                <img id="resultImage" class="result_img" src="" alt="" loading="lazy">
+                                <div class="result_body">
+                                    <h4 id="resultTitle" class="result_title"></h4>
+                                    <p id="resultDesc" class="result_desc"></p>
+                                </div>
+                            </div>
+                            <div class="result_actions">
+                                <button id="restartBtn" type="button" class="btn">테스트 다시하기</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //findStyle -->
+        <section id="timeline">
+            <h2>RETRO Timeline</h2>
+            <p class="sub">
+                레트로, 어디까지 거슬러 올라가봤어?<br>
+                한눈에 정리된 타임라인으로 유행이 돌고 도는 그 순간들을 살펴보세요!
+            </p>
+            <div class="timelineSlide" id="timelineContainer">
+                <ul class="timeline_years">
+                    <li>1960s</li>
+                    <li>1970s</li>
+                    <li>1980s</li>
+                    <li>1990s</li>
+                    <li>2000s</li>
+                </ul>
+                <div class="timelineWrap">
+                    <div class="timeline_track" aria-hidden="true">
+                        <div class="timeline_track_fill" id="trackFill"></div>
+                    </div>
+                </div>
+                <div class="timeline_card">
+                    <ul>
+                        <li class="year_1960">
+                            <div class="card_title">
+                                <p>모더니즘과 여성 해방의 시작</p>
+                            </div>
+                            <div class="card_hashtag">
+                                <p>#미니스커트 #기성복 대중화</p>
+                            </div>
+                            <!-- 카드 이미지 슬라이드 영역 -->
+                            <div class="card_slider">
+                                <!-- 왼쪽 버튼 -->
+                                <button class="card_nav card_nav_prev" aria-label="이전 이미지">
+                                    &#10094;
+                                </button>
+                                <!-- 이미지 래퍼 (슬라이드 아이템들) -->
+                                <div class="card_slides">
+                                    <figure class="card_slide is_active">
+                                        <img src="../img/1960s_01.png" alt="1960s_01">
+                                    </figure>
+                                </div>
+                                <!-- 오른쪽 버튼 -->
+                                <button class="card_nav card_nav_next" aria-label="다음 이미지">
+                                    &#10095;
+                                </button>
+                            </div>
+                        </li>
+                        <li class="year_1970">
+                            <div class="card_title">
+                                <p>히피 감성과 개성의 시대</p>
+                            </div>
+                            <div class="card_hashtag">
+                                <p>#보헤미안 #청청패션 #컬러풀</p>
+                            </div>
+                            <!-- 카드 이미지 슬라이드 영역 -->
+                            <div class="card_slider">
+                                <!-- 왼쪽 버튼 -->
+                                <button class="card_nav card_nav_prev" aria-label="이전 이미지">
+                                    &#10094;
+                                </button>
+                                <!-- 이미지 래퍼 (슬라이드 아이템들) -->
+                                <div class="card_slides">
+                                    <figure class="card_slide is_active">
+                                        <img src="../img/1970s_05.png" alt="1970s_01">
+                                    </figure>
+                                </div>
+                                <!-- 오른쪽 버튼 -->
+                                <button class="card_nav card_nav_next" aria-label="다음 이미지">
+                                    &#10095;
+                                </button>
+                            </div>
+                        </li>
+                        <li class="year_1980">
+                            <div class="card_title">
+                                <p>파워 & 볼륨의 시대</p>
+                            </div>
+                            <div class="card_hashtag">
+                                <p>#파워숄더 #스포티 #네온컬러</p>
+                            </div>
+                            <!-- 카드 이미지 슬라이드 영역 -->
+                            <div class="card_slider">
+                                <!-- 왼쪽 버튼 -->
+                                <button class="card_nav card_nav_prev" aria-label="이전 이미지">
+                                    &#10094;
+                                </button>
+                                <!-- 이미지 래퍼 (슬라이드 아이템들) -->
+                                <div class="card_slides">
+                                    <figure class="card_slide is_active">
+                                        <img src="../img/1980s_01.png" alt="1980s_01">
+                                    </figure>
+                                </div>
+                                <!-- 오른쪽 버튼 -->
+                                <button class="card_nav card_nav_next" aria-label="다음 이미지">
+                                    &#10095;
+                                </button>
+                            </div>
+                        </li>
+                        <li class="year_1990">
+                            <div class="card_title">
+                                <p>스트릿 & 실용성 중심</p>
+                            </div>
+                            <div class="card_hashtag">
+                                <p>#배기팬츠 #오버핏 #힙합 문화</p>
+                            </div>
+                            <!-- 카드 이미지 슬라이드 영역 -->
+                            <div class="card_slider">
+                                <!-- 왼쪽 버튼 -->
+                                <button class="card_nav card_nav_prev" aria-label="이전 이미지">
+                                    &#10094;
+                                </button>
+                                <!-- 이미지 래퍼 (슬라이드 아이템들) -->
+                                <div class="card_slides">
+                                    <figure class="card_slide is_active">
+                                        <img src="../img/1990s_02.png" alt="1990s_01">
+                                    </figure>
+                                </div>
+                                <!-- 오른쪽 버튼 -->
+                                <button class="card_nav card_nav_next" aria-label="다음 이미지">
+                                    &#10095;
+                                </button>
+                            </div>
+                        </li>
+                        <li class="year_2000">
+                            <div class="card_title">
+                                <p>Y2K, 과감한 노출과 키치의 시대</p>
+                            </div>
+                            <div class="card_hashtag">
+                                <p>#로우라이즈 #크롭탑 #키치</p>
+                            </div>
+                            <!-- 카드 이미지 슬라이드 영역 -->
+                            <div class="card_slider">
+                                <!-- 왼쪽 버튼 -->
+                                <button class="card_nav card_nav_prev" aria-label="이전 이미지">
+                                    &#10094;
+                                </button>
+                                <!-- 이미지 래퍼 (슬라이드 아이템들) -->
+                                <div class="card_slides">
+                                    <figure class="card_slide is_active">
+                                        <img src="../img/2000s_04.png" alt="2000s_01">
+                                    </figure>
+                                </div>
+                                <!-- 오른쪽 버튼 -->
+                                <button class="card_nav card_nav_next" aria-label="다음 이미지">
+                                    &#10095;
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="f_left">
+                <p class="f_logo">Retro.kr</p>
+                <p class="f_tagline">과거와 현재를 잇는 모던 레트로 아카이브</p>
+                <p class="copyright">© 2025 Retro. All Rights Reserved.</p>
+            </div>
+            <div class="f_right">
+                <p class="teamName">Team Retro</p>
+                <div class="members">
+                    <ul class="name">
+                        <li>JIWON</li>
+                        <li>MIN</li>
+                        <li>JUNSOO</li>
+                        <li>SOOMi</li>
+                    </ul>
+                    <ul class="link">
+                        <li>
+                            <a href=""><img src="../img/ico_portfolio.png" alt="jiwon's portfolio"></a>
+                            <a href="https://github.com/hangw1231"><img src="../img/ico_github.png" alt="jiwon's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ico_portfolio.png" alt="min's portfolio"></a>
+                            <a href=""><img src="../img/ico_github.png" alt="min's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ico_portfolio.png" alt="junsoo's portfolio"></a>
+                            <a href=""><img src="../img/ico_github.png" alt="junsoo's github"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ico_portfolio.png" alt="soomi's portfolio"></a>
+                            <a href=""><img src="../img/ico_github.png" alt="soomi's github"></a>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
