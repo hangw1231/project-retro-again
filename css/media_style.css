@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통 */
+body {
+    background: linear-gradient(#6A94FF, #CDE1FF, #FFFFFF);
+    background-attachment: fixed;
+}
+
+.innerBox {
+    width: 1098px;
+    margin: 0 auto;
+}
+
+/* 메인 */
+#main {
+    height: 100vh;
+}
+
+#main .innerBox {
+    position: relative;
+    top: 120px;
+}
+
+#main h1 {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    font-size: 40px;
+    color: #6993FE;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 5px 5px 0 #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#main .mainText {
+    position: absolute;
+    top: 215px;
+    left: 320px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.5;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 8px;
+}
+
+#main .mainList {
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    font-size: 32px;
+    text-align: left;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #6993FE;
+    text-shadow: 5px 5px 0 #6993FE;
+    line-height: 2.5;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 8px;
+}
+
+#main .green_btn {
+    position: absolute;
+    bottom: 65px;
+    left: 290px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+#main .green_btn .greenBtn {
+    display: inline-block;
+    width: 156px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: linear-gradient(to bottom, #F1FFED, #8DDD35);
+    border-radius: 90px;
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 2px 2px 0 #000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* 무비 스와이퍼 네비게이션 */
+.swiper {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: auto;
+    bottom: 10px;
+    transform: none;
+    color: #6993FE;
+}
+
+.swiper-button-prev {
+    left: 40%;
+}
+
+.swiper-button-next {
+    right: 40%;
+}
+
+/* 무비 */
+.swiper.mySwiper {
+    background: url(../img/icon_star.png);
+}
+
+.swiper-slide .innerBox {
+    position: relative;
+    margin-top: 120px;
+}
+
+.swiper-slide h2 {
+    position: absolute;
+    top: 3.3%;
+    left: 3%;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.swiper-slide .date {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    font-size: 22px;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #000;
+}
+
+.swiper-slide h3 {
+    position: absolute;
+    top: 19.3%;
+    left: 9%;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #000;
+}
+
+.swiper-slide .leftBox {
+    width: 224px;
+    position: absolute;
+    top: 36.5%;
+    left: 11%;
+}
+
+.swiper-slide .leftBox img {
+    width: 100%;
+}
+
+.swiper-slide .rightBox {
+    position: absolute;
+    top: 37%;
+    left: 37%;
+}
+
+.swiper-slide .rightBox .movietext {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #A0E857;
+    letter-spacing: 2px;
+    border: none;
+    padding-bottom: 12px;
+}
+
+.swiper-slide .rightBox p {
+    font-size: 20px;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #090909;
+    line-height: 1.5;
+    border-bottom: 2px solid #C5C5C5;
+    padding-bottom: 28px;
+    margin-bottom: 12px;
+}
+
+.swiper-slide .rightBox span {
+    font-size: 18px;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #090909;
+    line-height: 2.5;
+}
+
+
+/* 링크버튼 */
+.swiper-slide .linkBtn {
+    position: absolute;
+    top: 17.5%;
+    left: 76.5%;
+}
+
+.swiper-slide .link-btn {
+    display: block;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    background-color: #c1bec5;
+    color: black;
+    padding: 15px 40px;
+    position: relative;
+    cursor: pointer;
+    box-shadow:
+        2px 2px 0 #000000,
+        -1px -1px 0 #ffffff;
+}
+
+.swiper-slide .link-btn::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 2px dashed #4d4d4d;
+    pointer-events: none;
+}
+
+.swiper-slide .link-btn:active {
+    box-shadow: inset 2px 2px 0 #000000;
+}
+
+/* 비디오-에디터픽 */
+#videoPic {
+    background: url(../img/bg_star.png) no-repeat center/cover ;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#videoPic .innerBox {
+    position: relative;
+}
+
+#videoPic .innerBox h2 {
+    position: absolute;
+    top: 12.3%;
+    left: 4%;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#videoPic .innerBox img {
+    margin-top: 90px;
+}
+
+#videoPic .pickBtn {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#videoPic .pickBtn .videoBtn {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #dcdcdc;
+    color: black;
+    border: 2px solid #a0a0a0;
+    padding: 5px 14px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'DungGeunMo', sans-serif;
+    box-shadow: inset 2px 2px 2px #ffffff,
+        inset -2px -2px 2px #707070;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+}
+
+#videoPic .pickBtn .videoBtn:active {
+    box-shadow:
+        inset -2px -2px 1px #ffffff,
+        inset 2px 2px 1px #707070,
+        2px 2px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* 드라마 */
+#dramaArea {
+    background: 
+    url(../img/drama_snow.png)  no-repeat center/cover ;
+}
+#dramaArea .innerBox{
+    position: relative;
+    margin-bottom: 50px;
+}
+#dramaArea .innerBox img {
+    width: 100%;
+    margin-top: 100px;
+}
+#dramaArea .innerBox h2 {
+    position: absolute;
+    top: 4.7%;
+    left: 3.5%;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+}
+#dramaArea .left_box {
+    position: relative;
+    width: 480px;
+}
+
+#dramaArea .left_box img {
+    width: 100%;
+}
+
+/* 드라마 왼쪽 박스 텍스트 */
+#dramaArea .left_box .dicon {
+    position: absolute;
+    top: 5.9%;
+    left: 12%;
+    width: 20px;
+}
+#dramaArea .left_box h3 {
+    position: absolute;
+    top: 19.4%;
+    left: 20%;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #ffffff;
+}
+#dramaArea .left_box .dramaImg {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 379px;
+    height: 185px;
+}
+#dramaArea .left_box .dramaImg img {
+    width: 100%;
+    height: 100%;
+}
+#dramaArea .left_box .mainTitle {
+    position: absolute;
+    top: 51.5%;
+    left: 12%;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #ffffff;
+}
+#dramaArea .left_box .subTitle {
+    position: absolute;
+    top: 56.5%;
+    left: 12%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #ffffff;
+}
+#dramaArea .left_box .subTiltle_last {
+    position: absolute;
+    top: 59.8%;
+    left: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #ffffff;
+}
+#dramaArea .left_box p {
+    position: absolute;
+    top: 66%;
+    left: 12%;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'DungGeunMo', sans-serif;
+    line-height: 1.2;
+    color: #3F3E3C;
+}
+#dramaArea .left_box span {
+    position: absolute;
+    top: 83.3%;
+    left: 18%;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'DungGeunMo', sans-serif;
+    color: #000;
+}
+/* 드라마 버튼 */
+#dramaArea .left_box .dramaBtn {
+    position: absolute;
+    top: 88.5%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+#dramaArea .left_box .drama_btn {
+    display: inline-block;
+    width: 85px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #D4CEC8;
+    border-left: 3px solid #FCF8F6;
+    border-top: 3px solid #FCF8F6;
+    font-family: 'DungGeunMo', sans-serif;
+    font-size: 22px;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    box-shadow:
+        1px 1px 0px #000,
+        2px 2px 0px #666,
+        inset -2px -2px 0px #9f9a96,
+        inset 1px 1px 0px #FCF8F6;
+}
+#dramaArea .left_box .drama_btn:hover {
+    box-shadow:
+        1px 1px 0px #000,
+        2px 2px 0px #666,
+        inset -2px -2px 0px #9f9a96,
+        inset 1px 1px 0px #FCF8F6;
+    transform: translate(1px, 1px);
+}
+#dramaArea .left_box .drama_btn:active {
+    box-shadow:
+        inset -2px -2px 0px #9f9a96,
+        inset 1px 1px 0px #FCF8F6;
+    transform: translate(2px, 2px);
+}
+
+/* 드라마박스 자리잡기 */
+#dramaArea .box01 {
+    position: absolute;
+    top: 7.2%;
+    left: 5%;
+}
+#dramaArea .box2 {
+    position: absolute;
+    top: 37.8%;
+    left: 51%;
+}
+#dramaArea .box03 {
+    position: absolute;
+    top: 68.8%;
+    left: 5%;
+}
+/* 드라마 박스 기본 애니메이션 설정 */
+#dramaArea .box01,
+#dramaArea .box2,
+#dramaArea .box03 {
+  transform: translateY(50px); 
+  opacity: 0; 
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+#dramaArea .box01.show,
+#dramaArea .box2.show,
+#dramaArea .box03.show {
+  transform: translateY(0);
+  opacity: 1;
+}
